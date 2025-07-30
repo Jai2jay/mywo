@@ -1,0 +1,173 @@
+
+C030@C089 MINGW64 ~ (master)
+$ cd d
+bash: cd: d: No such file or directory
+
+C030@C089 MINGW64 ~ (master)
+$ cd/ d
+bash: cd/: No such file or directory
+
+C030@C089 MINGW64 ~ (master)
+$ cd: d
+bash: cd:: command not found
+
+C030@C089 MINGW64 ~ (master)
+$ cd
+
+C030@C089 MINGW64 ~ (master)
+$
+
+C030@C089 MINGW64 ~ (master)
+$ d
+bash: d: command not found
+
+C030@C089 MINGW64 ~ (master)
+$ e
+bash: e: command not found
+
+C030@C089 MINGW64 ~ (master)
+$ cd /d
+
+C030@C089 MINGW64 /d
+$ Akshay
+bash: Akshay: command not found
+
+C030@C089 MINGW64 /d
+$ cd /d Akshay
+bash: cd: too many arguments
+
+C030@C089 MINGW64 /d
+$ d: Akshay
+bash: d:: command not found
+
+C030@C089 MINGW64 /d
+$ cd /d/Akshay
+
+C030@C089 MINGW64 /d/Akshay
+$ code.
+bash: code.: command not found
+
+C030@C089 MINGW64 /d/Akshay
+$ code .
+
+C030@C089 MINGW64 /d/Akshay
+$ X[200~$ X
+> git config --global user.name jay
+> git config --global user.email 'adithjai2004@gmail.com'
+> git config --global user.name "jay"
+> git config --global --list
+>
+>
+> code .
+> ^C
+
+C030@C089 MINGW64 /d/Akshay
+$ git config --global --list
+user.user=jay
+user.name=jay
+user.email=adithjai2004@gmail.com
+
+C030@C089 MINGW64 /d/Akshay
+$ cd /d/Akshay
+
+C030@C089 MINGW64 /d/Akshay
+$ git init
+Initialized empty Git repository in D:/Akshay/.git/
+
+C030@C089 MINGW64 /d/Akshay
+$ git remote -v
+fatal: detected dubious ownership in repository at 'D:/Akshay'
+'D:/Akshay' is owned by:
+        (inconvertible) (S-1-5-21-1490447620-2203145326-1968691658-1001)
+but the current user is:
+        C089/C030 (S-1-5-21-4294586205-145290748-2534911409-1001)
+To add an exception for this directory, call:
+
+        git config --global --add safe.directory D:/Akshay
+
+C030@C089 MINGW64 /d/Akshay
+$ git clone https://github.com/Jai2jay/mywo.git
+Cloning into 'mywo'...
+warning: You appear to have cloned an empty repository.
+
+C030@C089 MINGW64 /d/Akshay
+$ git init
+Reinitialized existing Git repository in D:/Akshay/.git/
+
+C030@C089 MINGW64 /d/Akshay
+$ git status
+fatal: detected dubious ownership in repository at 'D:/Akshay'
+'D:/Akshay' is owned by:
+        (inconvertible) (S-1-5-21-1490447620-2203145326-1968691658-1001)
+but the current user is:
+        C089/C030 (S-1-5-21-4294586205-145290748-2534911409-1001)
+To add an exception for this directory, call:
+
+        git config --global --add safe.directory D:/Akshay
+
+C030@C089 MINGW64 /d/Akshay
+$ git config --global --add safe.directory D:/Akshay
+
+C030@C089 MINGW64 /d/Akshay (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        __pycache__/
+        calc.py
+        chord.html
+        chord_files/
+        co.png
+        geo.html
+        geo1.html
+        linlin.py
+        mathope.py
+        mywo.py
+        mywo/
+        portfo.html
+        portfoli.html
+        program1.R
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C030@C089 MINGW64 /d/Akshay (master)
+$ git add mywo.py
+
+C030@C089 MINGW64 /d/Akshay (master)
+$ git commit -m "initial commit"
+[master (root-commit) fb6ef44] initial commit
+ 1 file changed, 34 insertions(+)
+ create mode 100644 mywo.py
+
+C030@C089 MINGW64 /d/Akshay (master)
+$ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C030@C089 MINGW64 /d/Akshay (master)
+$ git remote add origin https://github.com/Jai2jay/mywo.git
+
+C030@C089 MINGW64 /d/Akshay (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 584 bytes | 584.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Jai2jay/mywo.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+C030@C089 MINGW64 /d/Akshay (master)
+$ git push
+Everything up-to-date
+
+C030@C089 MINGW64 /d/Akshay (master)
+$
