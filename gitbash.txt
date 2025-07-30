@@ -1,68 +1,24 @@
 
-C030@C089 MINGW64 ~ (master)
-$ cd d
-bash: cd: d: No such file or directory
 
-C030@C089 MINGW64 ~ (master)
-$ cd/ d
-bash: cd/: No such file or directory
-
-C030@C089 MINGW64 ~ (master)
-$ cd: d
-bash: cd:: command not found
-
-C030@C089 MINGW64 ~ (master)
-$ cd
-
-C030@C089 MINGW64 ~ (master)
-$
-
-C030@C089 MINGW64 ~ (master)
-$ d
-bash: d: command not found
-
-C030@C089 MINGW64 ~ (master)
-$ e
-bash: e: command not found
-
-C030@C089 MINGW64 ~ (master)
-$ cd /d
-
-C030@C089 MINGW64 /d
-$ Akshay
-bash: Akshay: command not found
-
-C030@C089 MINGW64 /d
-$ cd /d Akshay
-bash: cd: too many arguments
-
-C030@C089 MINGW64 /d
-$ d: Akshay
-bash: d:: command not found
 
 C030@C089 MINGW64 /d
 $ cd /d/Akshay
 
-C030@C089 MINGW64 /d/Akshay
-$ code.
-bash: code.: command not found
 
-C030@C089 MINGW64 /d/Akshay
 $ code .
 
-C030@C089 MINGW64 /d/Akshay
-$ X[200~$ X
-> git config --global user.name jay
-> git config --global user.email 'adithjai2004@gmail.com'
-> git config --global user.name "jay"
-> git config --global --list
->
->
-> code .
-> ^C
+                C030@C089 MINGW64 /d/Akshay
+                $ X[200~$ X
+                > git config --global user.name jay
+                 git config --global user.email 'adithjai2004@gmail.com'                             git config --global user.name "jay"
+                git config --global --list
+
+
+                 code .
+                > ^C  ( ctrl + c)
 
 C030@C089 MINGW64 /d/Akshay
-$ git config --global --list
+$ git config --global --list   #to check if user is loggged in 
 user.user=jay
 user.name=jay
 user.email=adithjai2004@gmail.com
@@ -74,16 +30,10 @@ C030@C089 MINGW64 /d/Akshay
 $ git init
 Initialized empty Git repository in D:/Akshay/.git/
 
-C030@C089 MINGW64 /d/Akshay
-$ git remote -v
-fatal: detected dubious ownership in repository at 'D:/Akshay'
-'D:/Akshay' is owned by:
-        (inconvertible) (S-1-5-21-1490447620-2203145326-1968691658-1001)
-but the current user is:
-        C089/C030 (S-1-5-21-4294586205-145290748-2534911409-1001)
-To add an exception for this directory, call:
 
-        git config --global --add safe.directory D:/Akshay
+
+
+
 
 C030@C089 MINGW64 /d/Akshay
 $ git clone https://github.com/Jai2jay/mywo.git
