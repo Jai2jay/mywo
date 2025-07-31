@@ -1,0 +1,76 @@
+# class vehicle:
+#     category = 'bike' #class variable
+#     def __init__(self,name,price):
+#         self.name = name
+#         self.price = price   
+#     def details(self):
+#         print(f"name: {self.name}, price: {self.price}")
+# # car = vehicle('suv',1000000)        
+# #         car.details()
+
+# class car(vehicle):
+#      def __init__(self, name, price,speed):
+#          super().__init__(name, price)
+#          self.speed = speed
+#      def car_details(self):
+#          super().details()
+#          print(f"speed: {self.speed}")
+
+# car1= car('xuv',2000000,300)
+# car1.car_details()         
+
+
+
+# car= vehicle("SUV",10000)
+# car2 = vehicle("car2",200000)
+    
+    
+# print(car.category)
+# print(car2.category) 
+
+# # print(vehicle.category)
+# print details()
+
+# # s2.category ='car'
+# print(s2.category)
+
+
+# vehicle.category = 'vehicle'
+# print(s1.category)
+# print(s2.category)       
+
+
+                                      <---------------------------------------------------->
+class book:
+    category = 'bike' #class variable
+    def __init__(self,title,author,publication_year):
+        self.title = title
+        self.author = author
+        self.publication_year = publication_year   
+    def book_info(self):
+        print(f"title: {self.title}, author: {self.author},publication_year;{self.publication_year}")
+# car = vehicle('suv',1000000)        
+#         car.details()
+
+class FictionBook(book):
+     def __init__(self, title, author, publication_year,genre):
+         super().__init__(title, author, publication_year)
+         self.genre = genre
+     def display_genre(self):
+         super().book_info()
+         print(f"genre: {self.genre}")
+
+class NonFictionBook(book):
+     def __init__(self, title, author, publication_year,subject):
+         super().__init__(title, author, publication_year)
+         self.subject = subject
+     def display_subject(self):
+         super().book_info()
+         print(f"subject: {self.subject}")
+
+
+book1= FictionBook('jai','jay',2007,'fiction')
+book1.display_genre()
+
+book2= NonFictionBook('meluha','jay','2015','biography')
+book2.display_subject()
