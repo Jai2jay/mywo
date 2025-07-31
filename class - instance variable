@@ -73,4 +73,33 @@ book1= FictionBook('jai','jay',2007,'fiction')
 book1.display_genre()
 
 book2= NonFictionBook('meluha','jay','2015','biography')
-book2.display_subject()
+book2.display_subject() 
+       <--------------------------------------------------------------------------------------------------------------------->
+
+class vehicle:
+                                                                 # category = 'bike' #class variable
+    def __init__(self,name,price):
+        self.name = name
+        self.price = price   
+    def details(self):
+        print(f"name: {self.name}, price: {self.price}")
+
+class four_wheel:
+    def __init__(self,name,wheel_type):
+        self.name = name
+        self.wheel_type = wheel_type
+    def fwdetails(self):
+        print(f"name:{self.name}, wheel_type:{self.wheel_type}")
+
+
+class car(vehicle,four_wheel):
+     def __init__(self, name,price,wheel_type):
+        vehicle.__init__(self,name,price)
+        four_wheel.__init__(self,name,wheel_type)
+        print(f"name:{self.name}, price{self.price}, wheel_type:{self.wheel_type}")
+
+car1= car('suv',800000,'carbon_fiber')
+car1.details()
+car1.fwdetails()    
+
+<---------------------------------------------------------------------------------------------------------------------->
