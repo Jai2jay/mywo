@@ -1,0 +1,37 @@
+
+import math
+
+class shape:
+    def display(self):
+                print("shape is")
+
+class circle(shape):
+    def __init__(self,r):
+        self.r = r
+    def area(self):
+        area= math.pi*self.r*self.r 
+        return area
+                       # print ("area",area)
+       
+class rectangle(shape):
+    def __init__(self,length,width):
+        self.length = length 
+        self.width = width
+    def Rarea(self):
+        Rarea= self.width * self.length
+        return Rarea
+                   # print("area of rectangle",Rarea)
+
+c1 = circle(5)
+                     # c1.display()
+print(c1.area())    
+                # c1 =circle(5)
+                # print(c1.area())
+
+               # r1 = rectangle(5,5)
+                # print (r1.Rarea())
+r1 = rectangle(1,1)
+    # r1.display()
+print(r1.Rarea())
+
+                                                
