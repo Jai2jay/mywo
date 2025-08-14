@@ -1,0 +1,7 @@
+
+
+                                                            git add DevuSon.html
+PS D:\Devananda>                                             git commit -m "api + promice"
+[main a7fbe5f] api + promice
+ 1 file changed, 18 insertions(+), 2 deletions(-)
+PS D:\Devananda>                                             git push -u origin main
